@@ -7,16 +7,23 @@ var speed = 80;
 var txt = texts[0];
 var blink = 0;
 
+var sections = ['home', 'projects', 'elearningcourses', 'about', 'connect']
 
 var observer = new IntersectionObserver(function(entries) {
-	if(entries[0].isIntersecting === true)
-//		console.log('Element has just become visible in screen');
+    console.log(entries)
+	if(entries[0].isIntersecting === true) {
+        if (entries[0]['intersectionRatio'] > 0.2) {
+            for (var s in sections) {
+            document.getElementById(sections[s] + '-navitem').classList.remove("selected-navitem");
+        }
         document.getElementById(entries[0].target.id + "-navitem").classList.add("selected-navitem");
+        }
+    }
     else
         document.getElementById(entries[0].target.id + "-navitem").classList.remove("selected-navitem");
-}, { threshold: [0.3] });
+}, { threshold: [0, 0.2] });
 
-observer.observe(document.querySelector("#home"))
+observer.observe(document.querySelector("#home"));
 observer.observe(document.querySelector("#projects"));
 observer.observe(document.querySelector("#elearningcourses"));
 observer.observe(document.querySelector("#about"));

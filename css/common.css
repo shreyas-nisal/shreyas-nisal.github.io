@@ -80,6 +80,7 @@ header{
   font-size: 25px;
   color: #818181;
   display: block;
+    transition: color 1s;
 }
 
 .selected-navitem {
@@ -131,9 +132,17 @@ header{
     width: 45%;
     margin-right: 5%;
     margin-bottom: 2rem;
+    display: grid;
+    background-color: #151515;
 }
 
-.project-card:hover {
+.link {
+    position: relative;
+    left: 25px;
+    top: 5px;
+}
+
+.fakeScreen:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
 }
@@ -151,6 +160,7 @@ header{
     font-size: 3rem;
     color: #eee;
 }
+
 
 .video-item {
     display: flex;
@@ -188,7 +198,7 @@ header{
 #window{
     flex: 1;
   width: 40%;
-  background: #bbb;
+  background: #f1f1f1;
   margin: 0 auto;
   margin-top: 2%;
   border-radius: 3px;
@@ -211,7 +221,7 @@ header{
     height: 100%;
 /*  max-width: 96%;*/
   min-height: 250px;
-  background: #efefef;
+  background: #fff;
   margin-top: 10px;
   border: 0;
   padding: 2%;
