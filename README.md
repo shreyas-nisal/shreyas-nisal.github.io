@@ -1,2 +1,2 @@
 # shreyas-nisal.github.io
-Temp hosting for website
+Temporary hosting for website
