@@ -1,7 +1,7 @@
 var i = 0;
 var textIndex = 1;
 var textIds = ["typeText", "typeText2", "typeText3"];
-var texts = ['<Hi! I am Shreyas />', 'A Computer Science major at BITS Goa', 'I am passionate about coding, and love working on mobile apps']
+var texts = ['<Hi! I am Shreyas />']
 textId = textIds[0];
 var speed = 80;
 var txt = texts[0];

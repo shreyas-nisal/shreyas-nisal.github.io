@@ -104,6 +104,16 @@ header{
 
 .landing-text h6 {
     font-size: 2rem;
+    opacity: 0%;
+    animation: fadein;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 100%;}
 }
 
 .container {
@@ -146,11 +156,11 @@ header{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
-    width: 650px;
+    width: 800px;
 }
 
 .video-item img {
-    width: 40%;
+    width: 30%;
 }
 
 .video-item:hover img {

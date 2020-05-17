@@ -269,6 +269,7 @@ input[type=text] {
 .browser-content {
     background-color: #f1f1f1;
     padding: 10px;
+    padding-top: 30px;
 }
 
 /*End Browser Window*/
