@@ -22,7 +22,6 @@ observer.observe(document.querySelector("#elearningcourses"));
 observer.observe(document.querySelector("#about"));
 observer.observe(document.querySelector("#connect"));
 
-
 typeWriter();
 
 
