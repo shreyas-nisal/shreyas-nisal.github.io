@@ -10,7 +10,6 @@ var blink = 0;
 var sections = ['home', 'projects', 'elearningcourses', 'about', 'connect']
 
 var observer = new IntersectionObserver(function(entries) {
-    console.log(entries)
 	if(entries[0].isIntersecting === true) {
         if (entries[0]['intersectionRatio'] > 0.2) {
             for (var s in sections) {

@@ -275,12 +275,11 @@ input[type=text] {
 /*End Browser Window*/
 
 
-
 /*About*/
 
 .about {
     display: flex;
-    align-items: center;
+/*    align-items: center;*/
     padding-left: 50px;
     padding-right: 50px;
 }
