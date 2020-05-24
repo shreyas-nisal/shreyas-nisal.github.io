@@ -1,3 +1,10 @@
+body {
+    background-color: #eee;
+}
+
+p {
+}
+
 .project-heading {
     width: 100vw;
     align-items: center
@@ -7,12 +14,12 @@
     font-size: 5rem;
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: #333;
 }
 
 .project-end h1 {
     font-size: 5rem;
-    color: white;
+    color: #333;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -44,6 +51,8 @@
     text-align: center;
     flex-direction: row;
     align-items: center;
+    width: 50vw;
+    margin-left: 25vw;
 }
 
 .btn-google {
@@ -55,11 +64,11 @@
 }
 
 .btn-google img {
-    width: 50%;
+    width: 42%;
 }
 
 .btn-apple img{
-    width: 45%;
+    width: 35%;
 }
 
 textarea {

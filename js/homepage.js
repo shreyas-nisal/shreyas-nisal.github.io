@@ -1,13 +1,9 @@
 var i = 0;
 var textIndex = 1;
-var textIds = ["typeText", "typeText2", "typeText3"];
-var texts = ['<Hi! I am Shreyas />']
-textId = textIds[0];
 var speed = 80;
-var txt = texts[0];
-var blink = 0;
+var txt = '<Hi! I am Shreyas />';
 
-var sections = ['home', 'projects', 'elearningcourses', 'about', 'connect']
+var sections = ['home', 'projects', 'programmingvideos', 'about', 'connect']
 
 var observer = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true) {
@@ -24,7 +20,7 @@ var observer = new IntersectionObserver(function(entries) {
 
 observer.observe(document.querySelector("#home"));
 observer.observe(document.querySelector("#projects"));
-observer.observe(document.querySelector("#elearningcourses"));
+observer.observe(document.querySelector("#programmingvideos"));
 observer.observe(document.querySelector("#about"));
 observer.observe(document.querySelector("#connect"));
 
@@ -33,22 +29,9 @@ typeWriter();
 
 function typeWriter() {
     if (i < txt.length) {
-        document.getElementById(textId).innerHTML += txt.charAt(i);
+        document.getElementById('typeText').innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
-        return;
-    }
-    
-    if (i === txt.length) {
-        if (textIndex != 3) {
-            speed = 50;
-            i = 0;
-            textId = textIds[textIndex];
-            txt = texts[textIndex++];
-            typeWriter();
-        }
-        else
-            blinkCursor();
     }
 }
 
