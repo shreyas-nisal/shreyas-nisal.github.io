@@ -10,14 +10,19 @@
         <title>Shreyas Nisal</title>
     </head>
     <body>
+        <div class="menu-toggler collapse">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <div class="sidenav">
-          <a id="home-navitem" href="#">Home</a>
-          <a id="projects-navitem" href="#projects">Projects</a>
-          <a id="programmingvideos-navitem" href="#programmingvideos">Programming Videos</a>
-          <a id="about-navitem" href="#about">About</a>
-          <a id="connect-navitem" href="#connect">Connect</a>
+          <a id="home-navitem" class="nav-link" href="#">Home</a>
+          <a id="projects-navitem" class="nav-link" href="#projects">Projects</a>
+          <a id="programmingvideos-navitem" class="nav-link" href="#programmingvideos">Programming Videos</a>
+          <a id="about-navitem" class="nav-link" href="#about">About</a>
+          <a id="connect-navitem" class="nav-link" href="#connect">Connect</a>
           <hr>
-          <a href="#">R&eacute;sum&eacute;</a>
+          <a href="#" class="nav-link">R&eacute;sum&eacute;</a>
         </div>
         <header id="home">
             <div class="landing-text">
@@ -316,6 +321,7 @@
             </div>
         </footer>
         
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="js/homepage.js"></script>
     </body>
 </html>

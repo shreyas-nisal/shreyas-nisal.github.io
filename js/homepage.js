@@ -42,3 +42,14 @@ function blinkCursor() {
     blink = (blink + 1) % 2;
 //    setTimeout(blinkCursor, speed);
 }
+
+
+$('.menu-toggler').on('click', function() {
+    $(this).toggleClass('open');
+    $('.sidenav').toggleClass('open');
+});
+
+$('.sidenav .nav-link').on('click', function() {
+    $('.menu-toggler').removeClass('open');
+    $('.sidenav').removeClass('open');
+});
