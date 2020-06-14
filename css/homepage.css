@@ -46,10 +46,6 @@
     flex: 1;
 }
 
-.fakeScreen p {
-    
-}
-
 span {
   color: #fff;
   font-weight: bold;
@@ -997,6 +993,10 @@ ul li ul li {
         margin-left: 0;
     }
     
+    .down-button {
+        margin-left: 0;
+    }
+    
     .video-item {
         width: 100%;
     }
@@ -1157,7 +1157,7 @@ ul li ul li {
 @media screen and (max-width: 600px) {
     .menu-toggler{
         top: 2rem;
-        right: 2rem;
+        left: 2rem;
     }
     
     .landing-text h1{

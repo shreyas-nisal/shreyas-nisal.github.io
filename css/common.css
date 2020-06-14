@@ -112,6 +112,34 @@ header{
     animation-fill-mode: forwards;
 }
 
+.down-button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7.5%;
+    color: #777;
+}
+
+.down-button h5 {
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+#down-icon {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.down-button:hover {
+    color: #eee;
+}
+
 @keyframes fadein {
     from {opacity: 0;}
     to {opacity: 100%;}
