@@ -140,6 +140,12 @@ header{
     position: relative;
     left: 25px;
     top: 5px;
+    font-size: 1.2rem;
+/*    font-weight: bold;*/
+}
+
+.link:hover {
+    font-weight: bold;
 }
 
 .fakeScreen:hover {
@@ -257,9 +263,9 @@ footer {
 .menu-toggler{
     position: absolute;
     top: 5rem;
-    right: 5rem;
-    width: 5rem;
-    height: 5rem;
+    left: 5rem;
+    width: 4rem;
+    height: 4rem;
 /*    display: flex;*/
     flex-direction: column;
     justify-content: space-between;

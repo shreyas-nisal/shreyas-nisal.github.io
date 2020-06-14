@@ -84,6 +84,13 @@ span {
   animation: type .5s steps(20, end) forwards;
 }
 
+.fakeScreen:active .line4 {
+    -webkit-animation: type .5s steps(20, end) forwards;
+  -moz-animation: type .5s steps(20, end) forwards;
+  -o-animation: type .5s steps(20, end) forwards;
+  animation: type .5s steps(20, end) forwards;
+}
+
 @-webkit-keyframes type {
   to {
     width: 17em;
@@ -284,7 +291,7 @@ input[type=text] {
 
 .portrait img {
     width: 70%;
-    border-radius: 5%;
+    border-radius: 3px;
 }
 
 /*End About*/
@@ -322,8 +329,11 @@ ul li ul li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  width: 770px;
-  height: 435px;
+/*  width: 770px;*/
+/*  height: 435px;*/
+    width: 100%;
+    max-width: 770px;
+    height: 435px;
   margin: 0 auto;
 }
 #finder *::before,
@@ -705,13 +715,17 @@ ul li ul li {
 }
 
 #view {
-  width: 770px;
-  height: 383px;
+    width: 100%;
+    height: 94%;
+/*  width: 770px;*/
+/*  height: 383px;*/
 }
 
 #sidebar {
-  width: 133px;
-  height: 380px;
+/*  width: 133px;*/
+/*  height: 380px;*/
+    width: 20%;
+    height: 100%;
   background-color: #e7ebf0;
   -moz-box-shadow: -1px 0 #b8b8b8 inset;
   -webkit-box-shadow: -1px 0 #b8b8b8 inset;
@@ -732,8 +746,10 @@ ul li ul li {
 }
 
 #content {
-  width: 637px;
-  height: 380px;
+/*  width: 637px;*/
+/*  height: 380px;*/
+    width: 80%;
+    height: 100%;
   background-color: #fff;
   -moz-border-radius: 0 0 6px 0;
   -webkit-border-radius: 0;
@@ -742,12 +758,12 @@ ul li ul li {
 }
 
 .folder {
-/*  width: 90px;*/
+  width: 100px;
 /*  height: 90px;*/
   margin: 0px 20px 21px 25px;
   text-align: center;
   float: left;
-    max-width: 90px;
+/*    max-width: 90px;*/
 }
 .folder span {
   display: inline-block;
@@ -862,7 +878,7 @@ ul li ul li {
 
 
 .fab, .fas {
-    font-size: 6rem;
+    font-size: 4rem;
     display: inline-block;
     margin-top: 20px;
     color: #555;
@@ -965,7 +981,7 @@ ul li ul li {
     }
     
     .sidenav {
-        width: 100vw;
+        width: 40vw;
         height: 100vh;
         position: fixed;
         transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -1122,6 +1138,27 @@ ul li ul li {
     .portrait img {
         width: 50%;
     }
+    
+    .folder {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+    }
+    
+    .folder p {
+        display: unset;
+    }
+    
+    .folder i {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    
+    #content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
 
 }
 
@@ -1209,6 +1246,11 @@ ul li ul li {
         text-align: center;
     }
     
+    .video-item h4 {
+        overflow: visible;
+       display:block;
+    }
+    
     .video-item img {
         width: 70%;
     }
@@ -1216,6 +1258,7 @@ ul li ul li {
     .video-description {
         margin-top: 10px;
         margin-bottom: 25px;
+        margin-left: 0;
     }
     
     .video-img{
@@ -1235,6 +1278,39 @@ ul li ul li {
         width: 80%;
     }
     
+    #sidebar {
+        display: none;
+    }
+    
+    #actions {
+        display: none;
+    }
+    
+    #view {
+        height: 94%;
+    }
+    
+    #content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    .folder {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+    }
+    
+    .folder p {
+        display: unset;
+    }
+    
+    .folder i {
+        font-size: 2rem;
+        margin-top: 0;
+    }
 }
 
 /*End Media Rules*/
