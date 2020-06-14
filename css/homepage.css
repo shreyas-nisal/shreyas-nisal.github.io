@@ -1047,14 +1047,6 @@ ul li ul li {
         transition: all 650ms cubic-bezier(1, 0, 0, 1);
     }
     
-    .landing-text h1{
-        font-size: 7rem;
-    }
-    
-    .landing-text h6{
-        font-size: 1.7rem;
-    }
-    
     .nav-list{
         flex-direction: column;
     }
@@ -1169,15 +1161,15 @@ ul li ul li {
     }
     
     .landing-text h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     .landing-text h6{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
-    .nav-link{
-        font-size: 3.5rem;
+    .sidenav .nav-link {
+        font-size: 2rem;
     }
     
     .about .container{

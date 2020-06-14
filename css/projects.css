@@ -2,23 +2,20 @@ body {
     background-color: #eee;
 }
 
-p {
-}
-
 .project-heading {
     width: 100vw;
     align-items: center
 }
 
 .project-heading h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     margin-top: 20px;
     color: #333;
 }
 
 .project-end h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #333;
     text-align: center;
     margin-top: 20px;
@@ -39,9 +36,14 @@ p {
 }
 
 .phone-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+    width: 40%;
+}
+
+.phone-container img {
+    width: 100%;
 }
 
 .btn-container {
@@ -51,8 +53,8 @@ p {
     text-align: center;
     flex-direction: row;
     align-items: center;
-    width: 50vw;
-    margin-left: 25vw;
+    width: 30vw;
+    margin-left: 35vw;
 }
 
 .btn-google {
@@ -64,11 +66,11 @@ p {
 }
 
 .btn-google img {
-    width: 42%;
+    width: 75%;
 }
 
 .btn-apple img{
-    width: 35%;
+    width: 66%;
 }
 
 textarea {
@@ -81,58 +83,56 @@ textarea {
     width: 100%;
 }
 
-.phone {
-  margin: 10px auto 50px auto;
+
+/*Media Rules*/
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .phone-container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .phone-container img {
+        width: 65%;
+    }
+    
+    .btn-container {
+        width: 40vw;
+        margin-left: 30vw;
+    }
+    
+    .btn-google img {
+        width: 100%;
+    }
+
+    .btn-apple img{
+        width: 85%;
+    }
 }
 
-.phone {
-  height: 480px;
-  width: 226px;
-  background: #415260;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-.phone .phone-shade {
-  position: absolute;
-  height: 500px;
-  width: 200px;
-  left: 50%;
-  background: #555f6b;
-  -webkit-transform: rotate(18deg);
-          transform: rotate(18deg);
-}
-.phone .phone-speaker {
-  height: 8px;
-  width: 42px;
-  border-radius: 4px;
-  background: #3e4752;
-  position: relative;
-  top: 23px;
-  left: 50%;
-  margin-left: -21px;
-}
-.phone .phone-button {
-  height: 40px;
-  width: 40px;
-  background: #49525b;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  margin-left: -20px;
-  bottom: 10px;
-}
-.phone .phone-screen {
-  height: 350px;
-  width: 208px;
-  background: #f2ebe2;
-  position: absolute;
-  left: 9px;
-  top: 58px;
-  overflow: hidden;
+@media screen and (max-width: 600px) {
+    
+    .project-heading h1 {
+        font-size: 3rem;
+    }
+    
+    .project-end h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        text-align: center;
+        font-size:  1.5rem;
+    }
+    
+    .btn-container {
+        width: 60vw;
+        margin-left: 20vw;
+    }
 }
 
-.phone-screen img {
-    width: 100%;
-/*    height: 100%;*/
-}
+/*End Media Rules*/
