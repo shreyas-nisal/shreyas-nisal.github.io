@@ -112,6 +112,16 @@ textarea {
     width: 100%;
 }
 
+.textcontainer p {
+    text-align: justify;
+}
+
+#big-image {
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 20%;
+}
+
 
 /*Media Rules*/
 
@@ -123,6 +133,10 @@ textarea {
     .phone-container {
         width: 100%;
         text-align: center;
+    }
+    
+    #big-image {
+        margin-left: 0;
     }
     
     .phone-container img {
