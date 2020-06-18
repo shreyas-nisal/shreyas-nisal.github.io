@@ -13,6 +13,8 @@ hr {
     border-left-style: none;
     border-right-style: none;
     color: #777;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .project-heading {
@@ -31,7 +33,7 @@ hr {
     font-size: 3rem;
     color: #eee;
     text-align: center;
-    margin-top: 20px;
+/*    margin-top: 20px;*/
     margin-bottom: 20px;
 }
 
@@ -46,9 +48,9 @@ hr {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 10px;
+/*    margin-bottom: 10px;*/
     color: #eee;
-    margin-top: 20px;
+/*    margin-top: 20px;*/
 }
 
 #window {
