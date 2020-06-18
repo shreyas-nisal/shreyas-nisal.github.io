@@ -7,8 +7,16 @@ p {
     color: #eee;
 }
 
+hr {
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    color: #777;
+}
+
 .project-heading {
-    width: 100vw;
+    width: 98vw;
     align-items: center
 }
 
@@ -29,12 +37,12 @@ p {
 
 .flex-container {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     align-items: center;
 }
 
-.flex-container h2 {
+.container h2 {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
@@ -54,10 +62,12 @@ p {
 /*    display: flex;*/
 /*    flex-direction: column;*/
     width: 40%;
+    min-height: 300px;
+    text-align: center;
 }
 
 .phone-container img {
-    width: 100%;
+    width: 50%;
 }
 
 .btn-container {
@@ -79,7 +89,17 @@ p {
     flex-direction: row;
     align-items: center;
     width: 15vw;
-    margin-left: 42.5vw;
+    margin-left: 42vw;
+}
+
+.game-btn-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 15%;
+    margin-left: 42.5%;
 }
 
 .project-btn-container {
@@ -129,20 +149,20 @@ textarea {
     margin-left: 20%;
 }
 
-.notepad-container h6 {
+.container h6 {
     font-size: 2rem;
     font-weight: normal;
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 20px;
+/*    margin-bottom: 20px;*/
 }
 
-.notepad-container a {
-    color: #ccc;
+.container a {
+/*    color: #ccc;*/
+    color: #9CD9F0
 }
 
-.notepad-container a:hover {
-    color: #eee;
+.container a:hover {
     font-weight: bold;
 }
 
@@ -152,6 +172,11 @@ textarea {
 @media screen and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
+    }
+    
+    .textcontainer {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .phone-container {
@@ -164,7 +189,7 @@ textarea {
     }
     
     .phone-container img {
-        width: 65%;
+        width: 50%;
     }
     
     .btn-container {
@@ -211,12 +236,17 @@ textarea {
         margin-left: 30%;
     }
     
-    .notepad-container h6 {
+    .game-btn-container {
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+    .container h6 {
         font-size: 1.5rem;
     }
     
     .phone-container img {
-        width: 100%;
+        width: 50%;
     }
 }
 
